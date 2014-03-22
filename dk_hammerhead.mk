@@ -39,5 +39,9 @@ TARGET_KERNEL_CONFIG := hammerhead_defconfig
 TARGET_VARIANT_CONFIG := hammerhead_defconfig
 TARGET_SELINUX_CONFIG := hammerhead_defconfig
 
+# Additional packages
+PRODUCT_PACKAGES += \
+    Torch
+
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)

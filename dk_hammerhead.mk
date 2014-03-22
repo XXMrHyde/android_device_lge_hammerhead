@@ -31,7 +31,6 @@ PRODUCT_DEVICE := hammerhead
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_RESTRICT_VENDOR_FILES := true
 
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/msm/hammerhead

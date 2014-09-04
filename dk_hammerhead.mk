@@ -38,6 +38,9 @@ TARGET_KERNEL_CONFIG := hammerhead_defconfig
 TARGET_VARIANT_CONFIG := hammerhead_defconfig
 TARGET_SELINUX_CONFIG := hammerhead_defconfig
 
+# Device specific part of the OTA update uri
+PRODUCT_UPDATE_URI_PART := v6fduvgfqtc8bvw/dk_update_hammerhead.json
+
 # Additional packages
 PRODUCT_PACKAGES += \
     Torch

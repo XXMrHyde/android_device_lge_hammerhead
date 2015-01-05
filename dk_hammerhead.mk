@@ -39,5 +39,9 @@ TARGET_KERNEL_CONFIG := hammerhead_defconfig
 TARGET_VARIANT_CONFIG := hammerhead_defconfig
 TARGET_SELINUX_CONFIG := hammerhead_defconfig
 
+# Bootanimation
+PRODUCT_COPY_FILES += \
+  device/lge/hammerhead/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)

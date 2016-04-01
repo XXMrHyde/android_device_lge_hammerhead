@@ -34,7 +34,7 @@ PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 
 # Kernel inline build
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.8
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(strip $(HOST_OS))-x86/arm/arm-eabi-4.8/bin/"
 TARGET_KERNEL_SOURCE := kernel/msm/hammerhead
 TARGET_KERNEL_CONFIG := hammerhead_defconfig
 TARGET_VARIANT_CONFIG := hammerhead_defconfig
